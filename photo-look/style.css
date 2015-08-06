@@ -1,0 +1,66 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: url(images/bg.jpg);
+}
+
+#body {
+	width:100%; 
+	height: 400px; 
+	/*overflow:hidden; */
+	position:relative; 
+	padding-top:225px; 
+	background:url(../images/bg.jpg) no-repeat 50% 0;
+}
+
+
+.slider ul {
+	position:relative;
+	margin-left: 100px;
+}
+.slider li {
+	float:left; 
+	margin:0px 30px; 
+	list-style:none; 
+	position:relative; 
+	padding:0; 
+	border:2px solid #000; 
+}
+.slider li img{
+	width:298px; 
+	height:212px;
+}
+
+.content1 {
+	width: 800px;
+	height: 390px;
+	display: none;
+	border: 2px solid black;
+	margin: 0px 0px 0px 330px;
+	position:relative; 
+	/*background: url(images/formstack1.jpg) no-repeat;*/
+	z-index: 99;
+}
+/*.content2 {
+	width: 800px;
+	height: 390px;
+	display: none;
+	border: 2px solid black;
+	margin: 0px 0px 0px 700px;
+	position:relative; 
+	/*background: url(images/formstack2.jpg) no-repeat;*/
+	z-index: 99;
+}
+.content3 {
+	width: 900px;
+	height: 390px;
+	display: none;
+	border: 2px solid black;
+	margin: 0px 0px 0px 1080px;
+	position:relative; 
+	/*background: url(images/formstack3.jpg) no-repeat;*/
+	z-index: 99;
+}*/

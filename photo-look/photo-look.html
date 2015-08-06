@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jquery.flip.min.js"></script>
+</head>
+<body>
+	<div id="body">
+		<div class="slider">
+		  	<ul>
+			    <li> 
+			      <img class="img1" src="images/thumbs/formstack1.jpg">
+			    </li>
+			    <li>
+			      <img class="img2" src="images/thumbs/formstack2.jpg">
+			    </li>
+			    <li>
+			      <img class="img3" src="images/thumbs/formstack3.jpg">
+			    </li>
+			</ul>
+  		</div>
+	<div class="content1">
+		
+	</div>
+	
+		
+	</div>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".img1").click(function(){
+				$(".content1").css({"display":"block",
+					"background":"url(images/formstack1.jpg) no-repeat"});
+			});
+
+			$(".img2").click(function(){
+				$(".content1").css({"display":"block",
+					"background":"url(images/formstack2.jpg) no-repeat"});
+			});
+
+			$(".img3").click(function(){
+				$(".content1").css({"display":"block",
+					"background":"url(images/formstack3.jpg) no-repeat"});
+			});
+
+			$(".content1").click(function(){
+						$(this).css("display","none");
+					});
+		});
+	</script>
+
+</body>
+</html>
