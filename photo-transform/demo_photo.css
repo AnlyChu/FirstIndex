@@ -1,0 +1,44 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#content {
+	width: 1000px;
+	margin: 0 auto;	
+	margin-top: 180px;
+}
+.wrapbox {
+	margin: 5px;
+	width: 180px;
+	height: 180px;
+	float: left;
+}
+
+.wrap {
+	background: url(images/background.jpg) center center no-repeat;
+	width: 100%;
+	height: 100%;
+	margin: 5px;
+	border: 1px solid #ddd;
+	text-align: center;
+	float: left;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.wrapdata {
+	display: none;
+}
+
+.wrap img {
+	position: absolute;
+
+	margin:20px 0 0 -70px;
+}
+
+
+.wrap:hover {
+	border: 1px solid #999;
+	box-shadow: 0 0 20px #999 inset;
+}

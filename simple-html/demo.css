@@ -1,0 +1,299 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	border: 1px solid black;
+}
+
+#header {
+	width: 960px;
+
+}
+#headerTop {
+	width: 960px;
+	height: 103px;
+	background: url(images/header1.png) repeat-x;
+}
+#headerTopLeft {
+	width: 400px;
+	height: 103px;
+	float: left;
+}
+#logo {
+	width: 231px;
+	height: 59px;
+	margin: 10px 0px 10px 10px;
+	float: left;
+}
+
+#logo_buttom {
+	width: 150px;
+	height: 20px;
+	font-size: 18px;
+	float: right;
+	margin: 60px 0px 0px 0px;
+}
+#logo_buttom p {
+	color: #2B2B2B;
+}
+#search {
+	width: 300px;
+	/*height: 103px;*/
+	float: right;
+	margin: 35px 0px 0px 0px;
+}
+#search form input:focus {
+	outline:none;
+}
+#search .searchTxt{
+	background: #4D494A;
+	width: 150px;
+	border: 1px solid #595758;
+	color: white;
+	padding: 7px;
+}
+#search .searchBtn {
+	background: url(images/search.png);
+	width: 100px;
+	height: 30px;
+	color: white;
+	cursor: pointer;
+}
+#nav{
+	width: 960px;
+	height: 30px;
+	background: url(images/nav.png) repeat-x;
+	text-align: center;
+}
+
+#nav .navList {
+	list-style: none;
+
+}
+#nav .navList li {
+		float: left;
+		margin-left:20px; 
+	
+}
+#nav .navList a {
+	text-decoration: none;
+	width: 100px;
+	height: 30px;
+	display: block;
+	color: black;
+	font-weight: bold;
+	line-height: 30px;
+}
+#nav .navList a:hover {
+	background: url(images/search.png);
+	color: white;
+}
+#runplay {
+	width: 960px;
+	height: 250px;
+	background: url(images/runplay_top.png) repeat-x;
+}
+#daoyu p {
+	color: gray;
+	font-size: 20px;
+	font-weight: bold;
+}
+#daoyu p.p1 {
+	width: 300px;
+	height: 23px;
+	padding: 40px 0px 0px 400px;
+}
+#daoyu p.p2 {
+	width: 300px;
+	height: 23px;
+	padding: 40px 0px 0px 500px;
+}
+
+#main {
+	width: 960px;
+	height: 500px;
+	margin-top: 10px;
+}
+#leftMain {
+	width: 650px;
+	height: 200px;
+	background: #EDF4FA;
+	float: left;
+}
+#leftMain .caption{
+	padding: 8px 0;
+	margin-left: 25px;
+	width: 350px;
+	float: left;
+}
+#leftMain .caption1{
+	padding: 8px 0;
+	margin-left: 375px;
+	width: 200px;
+	
+}
+#news {
+	width: 350px;
+	float: left;
+}
+#news .newsList {
+	margin-top: 10px;
+
+
+}
+#news .newsList li {
+	height: 20px;
+    line-height: 20px;
+   	padding: 8px 0;
+    margin-left: 25px;
+    list-style: none;
+    font-size: 10px;
+}
+#news .newsList li.ulist{
+	border-top: 1px solid #ccc;
+	padding: 8px 0;
+}
+#news .newsList a {
+	text-decoration: none;
+	color: black;
+}
+#news .newsList a:hover {
+	text-decoration: underline;
+	color: red;
+}
+#prd {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	width: 200px;
+	height: 174px;
+	float: left;
+	padding: 8px 0;
+	margin: 10px 0px 0px 10px;
+}
+
+#prd p a {
+	text-align: center;
+	display: block;
+	font-size: 10px;
+	margin-top: 30px;
+	text-decoration: none;
+	color: black;
+}
+#prd p a:hover{
+	text-decoration: underline;
+	color: red;
+}
+#prd1 {
+
+	width: 200px;
+	height: 174px;
+	float: left;
+	padding: 8px 0;
+	margin: 10px 0px 0px 10px;
+}
+#prd1 p a {
+	text-align: center;
+	display: block;
+	font-size: 10px;
+	margin-top: 20px;
+	text-decoration: none;
+	color: black;
+}
+#prd1 p a:hover{
+	text-decoration: underline;
+	color: red;
+}
+
+#rightMain {
+	width: 250px;
+	height: 400px;
+	float: right;
+	background: #EDF4FA;
+}
+
+#page .pageList {
+	margin-top: 10px;
+
+
+}
+#page .pageList li {
+	height: 20px;
+    line-height: 20px;
+   	padding: 8px 0;
+    margin-left: 25px;
+    list-style: none;
+    font-size: 10px;
+}
+
+#page .pageList a {
+	text-decoration: none;
+	color: black;
+}
+#page .pageList a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+#page .pageList li.plist{
+	border-top: 1px solid #ccc;
+	padding: 8px 0;
+}
+#rightMain .blogpage{
+	padding: 8px 0;
+	margin-left: 25px;
+	width: 350px;
+
+}
+
+#rightMain .cmts{
+	padding: 8px 0;
+	margin-left: 25px;
+	margin-top: 20px;
+	width: 350px;
+
+}
+
+#comment .cmtsList li {
+	height: 20px;
+    line-height: 20px;
+   	padding: 8px 0;
+    margin-left: 25px;
+    list-style: none;
+    font-size: 10px;
+}
+#comment .cmtsList a {
+	text-decoration: none;
+	color: black;
+}
+#comment.cmtsList a:hover {
+	text-decoration: underline;
+	color: red;
+}
+
+#comment .cmtsList li.clist{
+	border-top: 1px solid #ccc;
+	padding: 8px 0;
+}
+#footer {
+	width: 960px;
+	height: 103px;
+	background: url(images/footer_top.jpg) repeat-x;
+	text-align: center;
+}
+#footer p {
+	color: black;
+}
+
+#footer p a {
+	text-decoration: none;
+	color: black;
+}
+
+#footer p a:hover {
+	text-decoration: underline;
+	color: #b4b4b4;
+}

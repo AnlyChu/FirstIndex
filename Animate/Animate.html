@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="animate.css">
+	<title></title>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jquery.flip.min.js"></script>
+	
+</head>
+<body>
+	<div id="bg">
+		<div id="bgtxt">
+			<span class="stxt">
+				<ul class="txt">
+					<li class="cafe">CAFE + BAR</li>
+					<li class="dha"><h1>DHALIA</h1></li>
+				</ul>
+			</span>
+			<div class="righttxt">
+				<ul>
+					<li class="ap"><h2>Appetizers</h2></li>
+						
+					
+					<li class="ma"><h2>MainCourse</h2></li>
+					
+					
+					<li class="sp"><h2>Specials</h2></li>
+					
+					
+					<li class="de"><h2>Desserts</h2></li>
+					
+					<li class="wi"><h2>Wines</h2></li>
+					
+					
+				</ul>
+			</div>
+			<div>
+				<div id="r_0" class="r_content">
+
+					<ul>
+						<li><h2>Appetizers</h2></li>
+						<li>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart.</li>
+						<li>Lobster Bisque</li>
+						<li>Smoked Salmon Terrine</li>
+						<li>Tuna Ceviche</li>
+						<li>Wild Mushroom Flan</li>
+						<li>Almond Bruschetta</li>
+						<li>Green Chilli Canapee</li>
+						<li>Artichoke Rucula Salad</li>
+					</ul>
+				</div>
+				<div id="r_1" class="r_content">
+					<ul>
+						<li><h2>MainCourse</h2></li>
+						<li>Drops of rain could be heard hitting the pane, which made him feel quite sad.</li>
+						<li>Wild Sea Bass Filet</li>
+						<li>Linguini and Clams</li>
+						<li>Shrimp and Crabmeat Alfredo</li>
+						<li>Broiled Stuffed Flounder </li>
+						<li>Mussels Marinara</li>
+						<li>Grilled Mooloolaba Giant king prawns</li>
+						<li>Lobster Mornay</li>
+						<li>Fresh Shrimp Tart</li>
+					</ul>
+				</div>
+				<div id="r_2" class="r_content">
+					<ul>
+						<li><h2>Specials</h2></li>
+						<li>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</li>
+						<li>Ratatouille</li>
+						<li>Le Tourin</li>
+						<li>Wild Salmon Bruschetta</li>
+						<li>Sweet Mustard Gratin</li>
+						<li>Homemade Pizza Mediteranica</li>
+						<li>Spanakopita Speciale</li>
+						<li>Ricotta Spinach Cannelloni</li>
+					</ul>
+				</div>
+				<div id="r_3" class="r_content">
+					<ul>
+						<li><h2>Desserts</h2></li>
+						<li>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</li>
+						<li>New England Apple Crisp</li>
+						<li>Southern Pecan Pie</li>
+						<li>Brownie Fudge Sundae</li>
+						<li>Strawberry Mousse Cake</li>
+						<li>Vanilla Crème brûlée</li>
+						<li>Lemon Sorbet</li>
+						<li>Crunchy Almond Cake</li>
+					</ul>
+				</div>
+					
+				<div id="r_4" class="r_content">
+					<ul>
+						<li><h2>Wines</h2></li>
+						<li>A small river named Duden flows by their place and supplies it with the necessary regelialia.</li>
+						<li>CARM Douro Reserva</li>
+						<li>Fontodi Colli della Toscana Centrale Flaccianello</li>
+						<li>Alban Syrah Edna Valley Alban Estate Reva</li>
+						<li>Zaca Mesa Syrah Santa Ynez Valley</li>
+						<li>Quinta do Vallado Douro Reserva</li>
+						<li>Viticcio Chianti Classico Riserva</li>
+						<li>Avignonesi Vino Nobile di Montepulciano</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var load = $(".righttxt");
+		load.hide();
+		load.animate({top:'10px'},600).fadeIn();
+
+		$(".ap").click(function(){
+			$(".righttxt").fadeOut();
+			$('body').css({"background":"url(images/Appetizers.jpg) no-repeat","background-size":"cover"});
+			$("#r_0").css("display","block");
+		});
+		$(".ma").click(function(){
+			$(".righttxt").fadeOut();
+			$('body').css({"background":"url(images/MainCourse.jpg) no-repeat","background-size":"cover"});
+			$("#r_1").css("display","block");
+		});
+		$(".sp").click(function(){
+			$(".righttxt").fadeOut();
+			$('body').css({"background":"url(images/Specials.jpg) no-repeat","background-size":"cover"});
+			$("#r_2").css("display","block");
+		});
+		$(".de").click(function(){
+			$(".righttxt").fadeOut();
+			$('body').css({"background":"url(images/Desserts.jpg) no-repeat","background-size":"cover"});
+			$("#r_3").css("display","block");
+		});
+		$(".wi").click(function(){
+			$(".righttxt").fadeOut();
+			$('body').css({"background":"url(images/Wines.jpg) no-repeat","background-size":"cover"});
+			$("#r_4").css("display","block");
+		});
+		$(".r_content").click(function(){
+			$(".r_content").css("display","none");
+			$(".righttxt").fadeIn();
+		});
+
+
+	});
+
+	</script>
+</body>
+</html>
