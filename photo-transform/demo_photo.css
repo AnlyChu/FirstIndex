@@ -20,7 +20,7 @@
 	height: 100%;
 	margin: 5px;
 	border: 1px solid #ddd;
-	text-align: center;
+	/*text-align: center;*/
 	float: left;
 	position: relative;
 	left: 0px;
@@ -34,11 +34,40 @@
 .wrap img {
 	position: absolute;
 
-	margin:20px 0 0 -70px;
+	margin:20px 0 0 20px;
 }
 
 
 .wrap:hover {
 	border: 1px solid #999;
 	box-shadow: 0 0 20px #999 inset;
+}
+
+.wrapDescription {
+    font-size:14px;
+    padding:50px 10px 20px 20px;
+    font-style:italic;
+    text-indent: 1em;
+}
+.wrapURL {
+    font-size:10px;
+    font-weight:bold;
+    padding-left:15px;
+}
+
+.wrapURL a {
+	text-decoration: none;
+	color:#0196e3;
+    text-decoration:none;
+    outline:none;
+}
+
+.wrapURL a:hover {
+	text-decoration: underline;
+
+}
+
+
+.wrapURL a:visited {
+	color: #020202;
 }
