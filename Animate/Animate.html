@@ -18,6 +18,7 @@
 					<li class="dha"><h1>DHALIA</h1></li>
 				</ul>
 			</span>
+			<div class="bgtxt1">
 			<div class="righttxt">
 				<ul>
 					<li class="ap"><h2>Appetizers</h2></li>
@@ -35,6 +36,7 @@
 					
 					
 				</ul>
+			</div>
 			</div>
 			<div>
 				<div id="r_0" class="r_content">
@@ -112,7 +114,8 @@
 	$(document).ready(function(){
 		var load = $(".righttxt");
 		load.hide();
-		load.animate({top:'10px'},600).fadeIn();
+		$(".bgtxt1").css("animation","myfirst 2s");
+		load.animate({top:'10px'},2500).fadeIn();
 
 		$(".ap").click(function(){
 			$(".righttxt").fadeOut();

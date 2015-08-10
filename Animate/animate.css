@@ -21,14 +21,25 @@ body {
 	font-weight: bold;
 }
 
-#bgtxt {
+/*#bgtxt {
 	background: #000;
 	margin-top: 500px;
 	height: 100px;
-	
+}*/
+.bgtxt1 {
+	background: #000;
+	margin-top: 500px;
+	height: 100px;
+	/*animation:myfirst 5s;*/
+	/*-webkit-animation:myfirst 5s; */
 }
-
+@keyframes myfirst
+{
+	from {width: 0%;}
+	to {width: 100%;}
+}
 .stxt {
+	background: #000;
 	width: 200px;
 	height: 80px;
 	padding-top: 20px;
