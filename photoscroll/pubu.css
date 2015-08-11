@@ -1,0 +1,22 @@
+* {
+	padding: 0px;
+	margin:0px;
+}
+
+.box {
+	position: relative;
+	float: left;
+}
+
+.content {
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid gray;
+	box-shadow: 0 0 8px gray;
+	border-radius: 5px;
+}
+
+.content img {
+	width: 200px;
+	height: auto;
+}
