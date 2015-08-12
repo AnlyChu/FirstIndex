@@ -10,7 +10,7 @@
 
 .content {
 	padding: 10px;
-	margin: 5px;
+	margin: 10px;
 	border: 1px solid gray;
 	box-shadow: 0 0 8px gray;
 	border-radius: 5px;
@@ -19,4 +19,8 @@
 .content img {
 	width: 200px;
 	height: auto;
+}
+
+#container {
+	margin-left: 100px;
 }
