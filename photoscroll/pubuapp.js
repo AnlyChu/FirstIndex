@@ -8,7 +8,7 @@
 							$.each(dataImg.data,function(index,value){
 									var box = $("<div>").addClass("box").appendTo($("#container"));
 									var content = $("<div>").addClass("content").appendTo(box);
-									console.log("images/" + $(value).attr("src"));
+									// console.log("images/" + $(value).attr("src"));
 									$("<img>").attr("src","images/" + $(value).attr("src")).appendTo(content);
 							});
 							imgpush();
