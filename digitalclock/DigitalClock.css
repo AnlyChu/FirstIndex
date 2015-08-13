@@ -1,0 +1,19 @@
+* {
+	padding: 0px;
+	margin:0px;
+}
+
+
+#clock {
+	position: relative;
+	width: 600px;
+	
+	margin: 300px auto;
+}
+
+#clock img.digital {
+	position: relative;
+	width: 70px;
+	height: 120px;
+}
+
