@@ -4,12 +4,12 @@ window.onload = function(){
 	var aUl = document.getElementsByTagName('ul')[0];
 	var timer = null;
 	aUl.innerHTML += aUl.innerHTML;
-	aUl.style.width = aLi[0].offsetWidth*aLi.length + 'px';
+	aUl.style.width = aLi[0].offsetWidth*aLi.length  + 'px';
 	// alert(aUl.style.width);
 	timer = setInterval(move,30);
-alert(aUl.offsetWidth);
+
 	function move(){
-		
+
 		if(aUl.offsetLeft < -aUl.offsetWidth/2)
 		{
 			aUl.style.left = 0 + 'px';

@@ -1,0 +1,59 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	width: 900px;
+	height: 1000px;
+	margin: 0 auto;
+	border: 1px solid gray;
+
+}
+#container {
+	position: relative;
+	width: 900px;
+	height: 500px;
+	margin-top: 300px;
+	overflow: hidden;
+}
+#share {
+	width: 100px;
+	height: 300px;
+	position: absolute;
+	border: 1px solid gray;
+	left: -100px;
+}
+
+#share span {
+	position: absolute;
+	width: 30px;
+	height: 100px;
+	line-height: 30px;
+	right: -30px;
+	text-align: center;
+	top:120px;
+	background: #b4b4b4;
+}
+
+
+.target {
+	list-style: none;
+	text-align: center;
+}
+
+.target li {
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+}
+
+.target li a {
+	text-decoration: none;
+	color: black;
+}
+
+.target li a:hover {
+	color: red;
+	text-decoration: underline;
+}
