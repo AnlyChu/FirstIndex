@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="http://www.yiibai.com/js/angular.min.js"></script>
+    <link rel="stylesheet" href="bootcss/bootstrap-3.3.5-dist/css/bootstrap.css">
+    <title></title>
+</head>
+<body>
+    <div class="container col-md-8 col-md-offset-2" ng-controller="shoppingController">
+        <div  class="panel panel-default">
+            <div class="panel-heading text-center">ShoppingCart</div>
+            <table class="table table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <td>名称</td>
+                        <td>单价</td>
+                        <td>数量</td>
+                        <td>总计</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="item in items" ng-click="selectOneRow($index)" ng-class="{info:$index == selectOneRow}">
+                        <td ng-bind="item.name"></td>
+                        <td>
+                            <input class="form-control" ng-model="item.quantity" style="width:4em">
+                        </td>
+                        <td ng-bind="item.price | yuan"></td>
+                        <td ng-bind="item.quantity * item.price | yuan"></td>
+                        <td>
+                            <button class="btn btn-default" ng-click="remove($index)">删除</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-offset-11">总计: {{total() | yuan}}</div>
+        <button class="btn btn-primary col-md-offset-11"  ng-click="insertOne()">添加到购物车</button>
+    </div>
+
+    <script>
+        var myApp = angular.module('myApp',[]);
+        myApp.controller('shoppingController',function($scope){
+            $scope.items = [{name:'iPhone7',quantity:1,price:6588},
+                {name:'iPad5',quantity:1,price:5398},
+                {name:'iMac',quantity:2,price:4288}];
+            $scope.total = function(){
+                var total = 0;
+                for(var i = 0;i < $scope.items.length;i++)
+                {
+                    total = total + $scope.items[i].price * $scope.items[i].quantity;
+                }
+                return total;
+            };
+            $scope.remove = function(index){
+                    $scope.items.splice(index,1);
+            };
+            $scope.selectOneRow = function (row) {
+                $scope.selectedRow = row;
+            };
+            $scope.insertOne = function () {
+                $scope.items.splice(0, 0, { name: 'iTouch', quantity: 1, price: 8.95 });
+            };
+        });
+
+        myApp.filter('yuan',function(){
+           return function(input){
+               return "￥"+ input;
+           };
+        });
+    </script>
+</body>
+</html>
