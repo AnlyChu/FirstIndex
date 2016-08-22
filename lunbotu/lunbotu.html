@@ -36,19 +36,18 @@
 			});
 
 			function movenext(){
-				 $(".photo li:first-child").animate({marginLeft:"-400px"},1000,function(){
-            			var temp=$(this).clone();
-           				$(this).remove();
-           				temp.css({marginLeft:"0"});
-            			$(".photo").append(temp);
-        			});
+				var temp=$(".photo li:first-child").clone();
+				temp.css({marginLeft:"0"});
+				$(".photo li:first-child").remove();
+				$(".photo").append(temp);
+				$(".photo li:nth-child(2)").animate({marginLeft:"-400px"},1000);
 			}
 			function moveprev(){
 				  	var temp=$(".photo li:last-child").clone();
         			$(".photo li:last-child").remove();
         			temp.css({marginLeft:"-400px"});
         			$(".photo").prepend(temp);
-        			$(".photo li:first-child").animate({marginLeft:"0"},1000);
+        			$(".photo li:nth-child(2)").animate({marginLeft:"0"},1000);
 			}
 		});
 	</script>

@@ -25,10 +25,17 @@
 	
 }
 .photo li {
-	
 	float: left;
-
 }
+
+.photo li:nth-child(1){
+	margin-left: -400px;
+}
+.photo li:nth-child(2){
+	margin-left: 0px;
+}
+
+
 
 .photo  li img {
 	width: 400px;
